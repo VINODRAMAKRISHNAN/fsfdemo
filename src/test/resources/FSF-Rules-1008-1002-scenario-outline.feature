@@ -8,11 +8,11 @@ Feature: Scenario Outline Parallel Validation
     And there are no orphan Rules
     Then I connect to the Data File Under Test
     And there are data available
-    And all Rules are correct
-  
+    And all Rules are correct  
 
   Scenario Outline: Validate Policy Rules for both 1008 and 1002
     When I enter the Rule number <ruleno>
+    
   @REGRESSION
   Examples: 
       | ruleno | 
